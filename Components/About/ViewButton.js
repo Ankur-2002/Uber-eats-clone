@@ -16,7 +16,6 @@ export default function ViewButton({ navigation }) {
       {Loading ? (
         <AnimatedLottieView
           style={{
-            // height: 100,
             position: 'absolute',
             bottom: 0,
             //  top: 50%,
