@@ -18,11 +18,7 @@ export default function ViewButton({ navigation }) {
           style={{
             position: 'absolute',
             bottom: 0,
-            //  top: 50%,
-            borderWidth: 1,
-
             height: '100%',
-            widht: '100%',
             alignSelf: 'center',
             alignItems: 'center',
           }}
