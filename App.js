@@ -1,15 +1,20 @@
-import { View, Text } from "react-native";
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import Navigation from './Navigation/Navigation';
+// import {Provider,useDispatch, useSelector} from 'react-redux';
 
+import { createStore } from 'redux';
+// import { Reducer } from './Store/Reducer/Cart';
+import { Provider } from 'react-redux';
+import { Reducers } from './Store/Reducer/Index';
+
+const store = createStore(Reducers);
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
+    <Provider store={store}>
+      <Navigation />
+    </Provider>
   );
 }
+
+const Styles = StyleSheet.create({});
