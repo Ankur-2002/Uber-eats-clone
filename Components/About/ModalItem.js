@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import { app as Firebase } from '../../Firebase';
 const OrderList = ({ item }) => {
   return (
@@ -35,7 +35,7 @@ export default ModalItem = ({
   navigation,
   setLoading,
 }) => {
-  const Dispatch = useDispatch();
+  // const Dispatch = useDispatch();
 
   const SendOrder = async () => {
     // console.log(Firebase);
